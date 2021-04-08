@@ -17,3 +17,16 @@ Usage is fairly straightforward.
 - RetroArch + configured playlists
 - Apache Maven (to build)
 - Java 1.8+
+
+## Command line arguments
+```
+usage: java -jar retroarch-randomizer.jar [-d <dir>] [-e <path>] [-h] [-p <dir>] [-t <interval>] [-u <unit>]
+RetroArch Randomizer scans your RetroArch library configuration files, selects a random game and plays it for a set period of time. After the timeout
+has elapsed, it closes the game and selects another.
+ -d,--install-directory <dir>     RetroArch directory (default: C:\Users\<user>\AppData\Roaming\RetroArch)
+ -e,--executable-path <path>      RetroArch executable path (default: C:\Users\<user>\AppData\Roaming\RetroArch\retroarch.exe)
+ -h,--help                        Display this help message.
+ -p,--playlist-directory <dir>    RetroArch playlist directory (default: C:\Users\<user>\AppData\Roaming\RetroArch\playlists)
+ -t,--time-interval <interval>    Interval between games (default: 10 MINUTES)
+ -u,--time-interval-unit <unit>   Interval time unit (default: MINUTES)
+ ```
